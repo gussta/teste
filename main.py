@@ -1,3 +1,4 @@
+
 trello = 'perfume'
 chances = 3
 digitadas = []
@@ -46,5 +47,3 @@ while True:
                 break
             print(f'Você ainda tem {chances} chances.')
 
-
-    #Correção do erro. Não está parando quando as chances acabam!
