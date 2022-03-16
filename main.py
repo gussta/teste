@@ -11,7 +11,7 @@ while True:
 
     # Caso a pessoa tente digitar mais de uma letra!
     if len(letra) > 1:
-        print('Ahhhh isso não vale, digite apenas uma letra!!')
+        print('Ahhhh isso não valtee, digite apenas uma letra!!')
         continue
 
     digitadas.append(letra) #Adiciona a letra na lista digitada
@@ -40,5 +40,11 @@ while True:
         print(f'A palavra secreta está assim: {secreto_temporario}  ')
 
     if letra not in trello:
-        chances -= 1
-        print(f'Você ainda tem {chances} chances.')
+            chances -= 1
+            if chances == 0:
+                print(print(f'\n\nVocê falhou!!! A palavra '))
+                break
+            print(f'Você ainda tem {chances} chances.')
+
+
+    #Correção do erro. Não está parando quando as chances acabam!
